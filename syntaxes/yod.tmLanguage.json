@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json.schemastore.org/tmlanguage.json",
+  "name": "Yod",
+  "scopeName": "source.yod",
+  "fileTypes": ["yod"],
+  "uuid": "c5548be8-803d-4415-a670-6eb8bd72fd38",
+  "patterns": [
+    {
+      "name": "comment.line.yod",
+      "match": "#.*$"
+    },
+    {
+      "name": "constant.numeric.float.yod",
+      "match": "\\b\\d+\\.\\d+([eE][+-]?\\d+)?\\b",
+      "captures": {
+        "1": {
+          "name": "punctuation.separator.decimal.yod"
+        }
+      }
+    },
+    {
+      "name": "constant.numeric.int.yod",
+      "match": "\\b\\d+([eE][+-]?\\d+)?\\b"
+    },
+    {
+      "name": "constant.language.bool.yod",
+      "match": "\\b(True|False)\\b"
+    },
+    {
+      "name": "constant.language.unit.yod",
+      "match": "\\(\\)"
+    },
+    {
+      "name": "constant.language.builtin.yod",
+      "match": "\\b(Int|Float|String|Bool|Unit)\\b"
+    },
+    {
+      "name": "constant.language.type.yod",
+      "match": "\\b\\p{Lu}[\\p{L}\\d]*'*"
+    },
+    {
+      "name": "keyword.control.yod",
+      "match": "\\b(if|then|else|let|in|match|as)\\b|\\\\"
+    },
+    {
+      "name": "keyword.operator.yod",
+      "match": "\\+\\+|\\|>|->"
+    },
+    {
+      "name": "keyword.operator.logical.yod",
+      "match": "\\|\\||&&"
+    },
+    {
+      "name": "keyword.operator.comparison.yod",
+      "match": "!=|!~|~~|==|<=|>="
+    },
+    {
+      "name": "keyword.operator.arithmetic.yod",
+      "match": "\\*\\*"
+    },
+    {
+      "name": "keyword.operator.bitwise.yod",
+      "match": ">>|<<"
+    },
+    {
+      "name": "keyword.operator.assignment.yod",
+      "match": ":=|="
+    },
+    {
+      "name": "keyword.operator.logical.yod",
+      "match": "!"
+    },
+    {
+      "name": "keyword.operator.comparison.yod",
+      "match": "[<>]"
+    },
+    {
+      "name": "keyword.operator.arithmetic.yod",
+      "match": "[%\\/*-+]"
+    },
+    {
+      "name": "keyword.operator.bitwise.yod",
+      "match": "[\\^|&]"
+    },
+    {
+      "name": "keyword.operator.yod",
+      "match": ":"
+    },
+    {
+      "name": "keyword.other.yod",
+      "match": "\\bdef\\b"
+    },
+    {
+      "name": "punctuation.semicolon punctuation.separator.semicolon keyword.other.yod",
+      "match": ";"
+    },
+    {
+      "name": "punctuation.comma punctuation.separator.comma keyword.other.yod",
+      "match": ","
+    },
+    {
+      "name": "punctuation.ellipsis punctuation.terminator.ellipsis keyword.other.yod",
+      "match": "\\.\\.\\."
+    },
+    {
+      "name": "string.quoted.double.yod",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\$"
+        },
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\\\\\"
+        },
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\[\"'ntbr ]"
+        },
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\\\d{3}"
+        },
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\x[A-Fa-f0-9]{2}"
+        },
+        {
+          "name": "constant.character.escape.yod",
+          "match": "\\\\o[0-3][0-7]{2}"
+        },
+        {
+          "name": "invalid.illegal.unknown-escape.yod",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "support.function.builtin.yod",
+      "match": "\\b(sqrt|map|filter|foldLeft|foldRight|printString|printNumber|clearScreen|iter|join|range|sleep|nth|zip|random)\\b"
+    },
+    {
+      "name": "variable.other.yod",
+      "match": "\\b((\\p{Ll}[\\p{L}\\d]*'*)|_)"
+    }
+  ]
+}

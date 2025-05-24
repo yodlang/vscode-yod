@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2025 Milesime <213074881+milesime@users.noreply.github.com>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+.direnv/
+.github/
+.vscode/
+docs/
+src/
+.envrc
+.gitignore
+biome.json*
+bun.lock*
+esbuild.ts
+flake.*
+justfile
+tsconfig.json*
+*.map

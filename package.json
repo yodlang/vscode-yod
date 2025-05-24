@@ -1,0 +1,98 @@
+{
+  "name": "yod",
+  "displayName": "Yod",
+  "description": "The Yod programming language",
+  "private": true,
+  "icon": "assets/brand-256.png",
+  "version": "2025.5.24",
+  "license": "GPL-3.0-only",
+  "publisher": "yodlang",
+  "qna": false,
+  "homepage": "https://github.com/yodlang/vscode-yod#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yodlang/vscode-yod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yodlang/vscode-yod/issues"
+  },
+  "categories": ["Programming Languages", "Formatters"],
+  "keywords": ["functional"],
+  "extensionKind": ["ui", "workspace"],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "Workspaces can override the path to the executable."
+    },
+    "virtualWorkspaces": false
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Yod",
+      "properties": {
+        "yod.executablePath": {
+          "type": "string",
+          "default": "yod",
+          "scope": "machine-overridable",
+          "description": "Path to or name in PATH of the Yod executable."
+        }
+      }
+    },
+    "configurationDefaults": {
+      "[yod]": {
+        "editor.defaultFormatter": "yodlang.yod",
+        "editor.indentSize": 2
+      }
+    },
+    "languages": [
+      {
+        "id": "yod",
+        "aliases": ["Yod", "yod"],
+        "extensions": [".yod"],
+        "configuration": "syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "yod",
+        "scopeName": "source.yod",
+        "path": "syntaxes/yod.tmLanguage.json"
+      },
+      {
+        "scopeName": "markdown.yod.codeblock",
+        "path": "syntaxes/yod.codeblock.json",
+        "injectTo": ["text.html.markdown"],
+        "embeddedLanguages": {
+          "meta.embedded.block.yod": "yod"
+        }
+      }
+    ]
+  },
+  "main": "dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "bun run package",
+    "compile": "bun run check && bun esbuild.ts",
+    "package": "bun run check && bun esbuild.ts --production",
+    "check": "bun run check:types && bun run check:biome",
+    "check:types": "tsc",
+    "check:biome": "biome check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@total-typescript/tsconfig": "^1.0.4",
+    "@types/node": "^22.15.21",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.4.2",
+    "esbuild": "^0.25.4",
+    "typescript": "^5.8.3"
+  },
+  "trustedDependencies": [
+    "esbuild",
+    "keytar",
+    "@biomejs/biome",
+    "@vscode/vsce-sign"
+  ]
+}

@@ -37,9 +37,9 @@ You will only need to have the Yod executable either in your PATH, or pointed by
 
 ## Installation
 
-1. Download [the latest VSIX](https://github.com/yodlang/vscode-yod/releases/latest).
-2. In the extensions tab of Visual Studio Code, from the three dots, click on “Install from VSIX…”.
-3. Select the VSIX file you have just downloaded.
+1. Download [the latest VSIX](https://github.com/yodlang/vscode-yod/releases/latest)
+2. In the extensions tab of Visual Studio Code, from the three dots, click on “Install from VSIX…”
+3. Select the VSIX file you have just downloaded
 
 The extension is now installed.
 

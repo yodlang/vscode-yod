@@ -4,7 +4,7 @@
   "description": "The Yod programming language",
   "private": true,
   "icon": "assets/brand-256.png",
-  "version": "2025.5.24",
+  "version": "2025.6.13",
   "license": "GPL-3.0-only",
   "publisher": "yodlang",
   "qna": false,

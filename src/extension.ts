@@ -2,9 +2,7 @@
 //!
 //! SPDX-License-Identifier: GPL-3.0-only
 
-// biome-ignore lint/correctness/noNodejsModules: necessary for a VS Code extension
 import { spawn } from "node:child_process";
-// biome-ignore lint/correctness/noUndeclaredDependencies: already running inside VS Code
 import vscode from "vscode";
 import { contributes } from "../package.json";
 
@@ -18,7 +16,6 @@ interface YodReport {
 }
 
 class Formatter {
-  // biome-ignore lint/style/noParameterProperties: useful here
   constructor(private diagnostics: vscode.DiagnosticCollection) {}
 
   async provideDocumentFormattingEdits(

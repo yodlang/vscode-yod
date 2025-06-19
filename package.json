@@ -16,13 +16,21 @@
   "bugs": {
     "url": "https://github.com/yodlang/vscode-yod/issues"
   },
-  "categories": ["Programming Languages", "Formatters"],
-  "keywords": ["functional"],
-  "extensionKind": ["ui", "workspace"],
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "keywords": [
+    "functional"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": false,
-      "description": "Workspaces can override the path to the executable."
+      "description": "Workspaces can override the path to the executable"
     },
     "virtualWorkspaces": false
   },
@@ -50,8 +58,13 @@
     "languages": [
       {
         "id": "yod",
-        "aliases": ["Yod", "yod"],
-        "extensions": [".yod"],
+        "aliases": [
+          "Yod",
+          "yod"
+        ],
+        "extensions": [
+          ".yod"
+        ],
         "configuration": "syntaxes/language-configuration.json"
       }
     ],
@@ -64,7 +77,9 @@
       {
         "scopeName": "markdown.yod.codeblock",
         "path": "syntaxes/yod.codeblock.json",
-        "injectTo": ["text.html.markdown"],
+        "injectTo": [
+          "text.html.markdown"
+        ],
         "embeddedLanguages": {
           "meta.embedded.block.yod": "yod"
         }
@@ -81,7 +96,7 @@
     "check:biome": "biome check"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/node": "^24.0.3",
     "@types/vscode": "^1.85.0",

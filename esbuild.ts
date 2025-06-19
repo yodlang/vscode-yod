@@ -24,7 +24,6 @@ async function main() {
 }
 
 main().catch((err) => {
-  // biome-ignore lint/suspicious/noConsole: only for developpers
   console.error(err);
   process.exitCode = 1;
 });

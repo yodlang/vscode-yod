@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
+    "source.fixAll.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
   "[javascript]": {

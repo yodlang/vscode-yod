@@ -16,7 +16,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
     <br />
     <a href="https://github.com/yodlang/yod">Yod</a> •
     <a href="#usage">Usage</a> •
-    <a href="#manual-installation">Manual Installation</a> •
+    <a href="#installation">Installation</a> •
     <a href="#contributing">Contributing</a> •
     <a href="#license">License</a>
   </p>

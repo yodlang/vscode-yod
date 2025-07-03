@@ -96,7 +96,7 @@
     "check:biome": "biome check"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.5",
+    "@biomejs/biome": "2.0.6",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/node": "^24.0.7",
     "@types/vscode": "^1.85.0",

@@ -5,7 +5,7 @@
   "private": true,
   "icon": "assets/brand-256.png",
   "version": "2025.6.29",
-  "license": "GPL-3.0-only",
+  "license": "GPL-2.0-only",
   "publisher": "yodlang",
   "qna": false,
   "homepage": "https://github.com/yodlang/vscode-yod#readme",
@@ -96,7 +96,7 @@
     "check:biome": "biome check"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.1",
+    "@biomejs/biome": "2.1.2",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/node": "^24.0.13",
     "@types/vscode": "^1.85.0",

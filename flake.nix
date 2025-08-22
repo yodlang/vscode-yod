@@ -16,6 +16,14 @@
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShellNoCC {
           packages = with pkgs; [
+            nixd
+            nixfmt-rfc-style
+            prettierd
+            marksman
+            harper
+            yaml-language-server
+            just-lsp
+            biome
             reuse
             bun
             just

@@ -1,14 +1,14 @@
 {
-  "$schema": "https://json.schemastore.org/language-configuration.json",
-  "comments": {
-    "lineComment": "#"
-  },
-  "brackets": [["[", "]"], ["(", ")"], ["{", "}"]],
-  "autoClosingPairs": [
-    { "open": "[", "close": "]", "notIn": ["string", "comment"] },
-    { "open": "(", "close": ")", "notIn": ["string", "comment"] },
-    { "open": "{", "close": "}", "notIn": ["string", "comment"] },
-    { "open": "\"", "close": "\"", "notIn": ["string", "comment"] }
-  ],
-  "surroundingPairs": [["[", "]"], ["(", ")"], ["{", "}"], ["\"", "\""]]
+	"$schema": "https://json.schemastore.org/language-configuration.json",
+	"comments": {
+		"lineComment": "#"
+	},
+	"brackets": [["[", "]"], ["(", ")"], ["{", "}"]],
+	"autoClosingPairs": [
+		{ "open": "[", "close": "]", "notIn": ["string", "comment"] },
+		{ "open": "(", "close": ")", "notIn": ["string", "comment"] },
+		{ "open": "{", "close": "}", "notIn": ["string", "comment"] },
+		{ "open": "\"", "close": "\"", "notIn": ["string", "comment"] }
+	],
+	"surroundingPairs": [["[", "]"], ["(", ")"], ["{", "}"], ["\"", "\""]]
 }

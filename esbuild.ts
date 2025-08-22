@@ -7,23 +7,23 @@ import { context } from "esbuild";
 const production = process.argv.includes("--production");
 
 async function main() {
-  const ctx = await context({
-    entryPoints: ["src/extension.ts"],
-    bundle: true,
-    format: "cjs",
-    minify: production,
-    sourcemap: !production,
-    sourcesContent: false,
-    platform: "node",
-    outfile: "dist/extension.js",
-    external: ["vscode"],
-  });
+	const ctx = await context({
+		entryPoints: ["src/extension.ts"],
+		bundle: true,
+		format: "cjs",
+		minify: production,
+		sourcemap: !production,
+		sourcesContent: false,
+		platform: "node",
+		outfile: "dist/extension.js",
+		external: ["vscode"],
+	});
 
-  await ctx.rebuild();
-  await ctx.dispose();
+	await ctx.rebuild();
+	await ctx.dispose();
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exitCode = 1;
+	console.error(err);
+	process.exitCode = 1;
 });
